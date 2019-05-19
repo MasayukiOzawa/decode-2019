@@ -1,0 +1,5 @@
+name: add-app
+version: v1
+inputs:
+  x: 10
+  y: 200

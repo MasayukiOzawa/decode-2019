@@ -1,0 +1,13 @@
+#spec.yaml
+name: add-app #name of your python script
+version: v1  #version of the app
+runtime: Python #the language this app uses (R or Python)
+src: add.py #full path to the location of the app
+entrypoint: add #the function that will be called upon execution
+replicas: 1  #number of replicas needed
+poolsize: 1  #the pool size that you need your app to scale
+inputs:  #input parameters that the app expects and the type
+  x: int
+  y: int
+output: #output parameter the app expects and the type
+  result: int
